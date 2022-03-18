@@ -1,0 +1,72 @@
+@import 'scss/var.scss';
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  z-index: 5;
+
+  .headerWrap {
+    display: flex;
+    width: 108rem;
+    height: 6rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    .logo {
+      display: inline-block;
+      width: 8.6rem;
+      height: 2.8rem;
+      background-color: pink;
+    }
+
+    nav {
+      a {
+        font-size: 1.8rem;
+        padding: 1.2rem;
+        margin-right: 1.6rem;
+        font-weight: normal;
+        cursor: pointer;
+        border-radius: 1rem;
+  
+        &:hover {
+          background-color: $hover-grey;
+        }
+  
+        &.active {
+          font-weight: bold;
+          color: $title-fc;
+        }
+      }
+    }
+  
+    .loginWrap {
+      display: flex;
+      align-items: center;
+      font-size: 1.6rem;
+      color: $link-fc;
+  
+      a {
+        display: block;
+        line-height: 2.2rem;
+        margin: 0;
+        font-weight: bold;
+        padding: 1.2rem;
+      }
+
+      span {
+        width: 1px;
+        height: 24px;
+        background-color: rgb(196, 196, 196);
+        margin: 0px 8px;
+      }
+    }
+
+  }
+
+  
+
+}

@@ -1,0 +1,14 @@
+@import 'scss/var.scss';
+
+@font-face {
+  font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+  color: $paragraph-fc;
+}
