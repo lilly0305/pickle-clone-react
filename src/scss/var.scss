@@ -8,5 +8,42 @@ $section-grey-color: #F8F9FD;
 $section-green-color: rgb(206, 248, 232);
 $point-green: #A2F5D5;
 $hover-grey: #F1F3F7;
+
 // button colors
-$link-btn-color: #4DCA9A;
+$link-btn-color: #53E3AC;
+$link-btn-hover-color: #4DCA9A;
+
+//mixins
+@mixin linkButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  width: fit-content;
+  background-color: $link-btn-color;
+  color: white;
+  padding: 2rem 6rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+
+  &:hover {
+    background-color: $link-btn-hover-color;
+
+  }
+  
+}
+
+@mixin imgAlignCenter {
+  position: relative;
+  overflow: hidden;
+
+  img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

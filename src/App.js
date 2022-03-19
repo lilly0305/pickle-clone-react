@@ -1,6 +1,6 @@
 import { Header } from "commons/header/Header";
 import { Route, Routes } from "react-router-dom";
-import { Main } from "./commons/header/main/Main";
+import { Main } from "./commons/main/Main";
 
 import 'scss/master.scss';
 

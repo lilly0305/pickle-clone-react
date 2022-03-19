@@ -1,14 +1,36 @@
 @import 'scss/var.scss';
 
+// 에스코어 드림 폰트
 @font-face {
-  font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+  font-family: 'S-CoreDream-6Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 body {
   font-size: 1.6rem;
-  font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
   color: $paragraph-fc;
+}
+
+h2.sectionTtile {
+  font-size: 4.6rem;
+  color: $title-fc;
+  font-weight: 900;
+
+  p{
+    strong{
+      position: relative;
+      &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 30%;
+        bottom: 1rem;
+        z-index: -1;
+        background: $point-green;
+      }
+    }
+  }
 }
